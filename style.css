@@ -1,0 +1,85 @@
+/* Import Bold and Mono Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --red: #FF0000;
+    --black: #000000;
+    --white: #FFFFFF;
+    --yellow: #FAFC15;
+    --blue: #0047FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.2;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+/* Neo-Brutalist Components */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-bottom: 6px solid var(--black);
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    z-index: 100;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 700;
+    margin-left: 2rem;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover { color: var(--red); }
+
+.btn-black {
+    background: var(--black);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Shadows and Tilts */
+.hard-shadow { box-shadow: 8px 8px 0px 0px var(--black); }
+.red-shadow { box-shadow: 8px 8px 0px 0px var(--red); }
+.yellow-shadow { box-shadow: 10px 10px 0px 0px var(--yellow); }
+
+.tilt-bar {
+    background: var(--black);
+    color: var(--white);
+    padding: 20px;
+    transform: rotate(-1.5deg);
+    display: inline-block;
+    width: 105%;
+    margin-left: -2%;
+}
+
+footer {
+    background: var(--black);
+    color: var(--white);
+    padding: 3rem;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 50px;
+}
